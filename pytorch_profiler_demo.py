@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 from torch.profiler import profile, ProfilerActivity, schedule
 
-# tiny MLP model
+# MLP model definition
 class MLP(nn.Module):
     def __init__(self):
         super().__init__()
@@ -21,14 +21,28 @@ class MLP(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-model = MLP()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
-loss_fn = nn.CrossEntropyLoss()
+def build_model():
+    """
+    Returns (model, optimizer, loss_fn)
+    Edit this function to change the model architecture or training setup
+    """
+    model = MLP()
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+    loss_fn = nn.CrossEntropyLoss()
+    return model, optimizer, loss_fn
 
-#fake data, shaped like MNIST
-batch_size = 32
-fake_images = torch.randn(batch_size, 1, 28, 28)
-fake_labels = torch.randint(0, 10, (batch_size,))
+def build_data(batch_size=32):
+    """
+    Returns (images, labels)
+    Edit this function to change the input data
+    """
+    images = torch.randn(batch_size, 1, 28, 28)
+    labels = torch.randint(0, 10, (batch_size,))
+    return images, labels
+
+# Training setup
+model, optimizer, loss_fn = build_model()
+fake_images, fake_labels = build_data()
 
 def train_step():
     optimizer.zero_grad()
@@ -37,7 +51,7 @@ def train_step():
     loss.backward()
     optimizer.step()
 
-# profile some steps, read out cumulative FLOPs
+# Profile some steps, read out cumulative FLOPs
 num_steps = 20
 total_flops = 0
 
