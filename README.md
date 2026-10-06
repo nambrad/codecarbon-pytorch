@@ -74,7 +74,7 @@ and writes latitude/longitude into the CSV, which we don't want in a shared repo
   runs on the same machine rather than across machines.
 - Very short runs (under a minute) give noisy numbers. Longer runs are more meaningful.
 
-# PyTorch Profiler FLOP count and CPU time tracking
+# PyTorch Profiler FLOP Count and CPU Time Tracking
 We measure the FLOP counts and CPU time of runs on an ML model with [PyTorch](https://docs.pytorch.org/docs/stable/profiler.html).
 
 ## Setup
