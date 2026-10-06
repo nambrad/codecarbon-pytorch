@@ -73,3 +73,19 @@ and writes latitude/longitude into the CSV, which we don't want in a shared repo
 - macOS and Windows: CPU power is estimated from the chip's rated power and load, so compare
   runs on the same machine rather than across machines.
 - Very short runs (under a minute) give noisy numbers. Longer runs are more meaningful.
+
+# PyTorch Profiler FLOP count and CPU time tracking
+We measure the FLOP counts and CPU time of runs on an ML model with [PyTorch](https://docs.pytorch.org/docs/stable/profiler.html).
+
+## Setup
+Install PyTorch if you haven't already:
+```bash
+pip install torch --break-system-packages
+```
+
+# Run the profiler
+```bash
+python pytorch_profiler_demo.py
+```
+
+Currently, the profiler runs on a tiny MLP model. To change the model, optimizer, or loss function, edit the `build_model` function. To change the training data images or labels, edit the `build_data` function.
