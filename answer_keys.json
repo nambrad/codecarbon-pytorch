@@ -10,13 +10,21 @@
       "verdict": "block"
     },
     "L1-004": {
-      "verdict": "allow"
+      "verdict": "block"
     },
     "L1-005": {
       "verdict": "block"
     },
     "L1-006": {
       "verdict": "allow"
+    },
+    "L1-007": {
+      "verdict": "block",
+      "reason": "evidence: FLOPs and energy edited after signing"
+    },
+    "L1-008": {
+      "verdict": "block",
+      "reason": "evidence: chip not in registry"
     }
   },
   "2": {
@@ -30,13 +38,17 @@
       "verdict": "block"
     },
     "L2-004": {
-      "verdict": "allow"
+      "verdict": "block"
     },
     "L2-005": {
       "verdict": "block"
     },
     "L2-006": {
       "verdict": "block"
+    },
+    "L2-007": {
+      "verdict": "block",
+      "reason": "evidence: replay of L2-004 (stale counter)"
     }
   },
   "3": {
@@ -56,7 +68,7 @@
       "verdict": "allow"
     },
     "L3-006": {
-      "verdict": "allow"
+      "verdict": "block"
     }
   },
   "4": {
@@ -77,6 +89,14 @@
     },
     "L4-006": {
       "verdict": "block"
+    },
+    "L4-007": {
+      "verdict": "block",
+      "reason": "evidence: FLOPs and energy edited after signing"
+    },
+    "L4-008": {
+      "verdict": "block",
+      "reason": "evidence: replay of L4-003 (stale counter)"
     }
   }
 }

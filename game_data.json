@@ -1,0 +1,452 @@
+{
+  "config": {
+    "flop_limit": 2300000000000,
+    "energy_limit_kj": 4.6,
+    "reference_ranges": {
+      "inference": {
+        "flops": [
+          46000000000,
+          575000000000
+        ],
+        "energy_kj": [
+          0.0481,
+          1.529
+        ],
+        "flops_per_kj": [
+          376071435693,
+          956466359523
+        ]
+      },
+      "training": {
+        "flops": [
+          230000000000,
+          1380000000000
+        ],
+        "energy_kj": [
+          0.3773,
+          4.1549
+        ],
+        "flops_per_kj": [
+          332136094387,
+          609656190754
+        ]
+      }
+    }
+  },
+  "registry": {
+    "chip-01": {
+      "public_key": "1mUkMBSejgczVu/qSqUdojmFBIuFWLCgzGqAY0Q5Bhc=",
+      "owner": "lab_01"
+    },
+    "chip-02": {
+      "public_key": "bIuO7KDra1+/OeiT5rIl6hz0tA8whgDw6qKxewpBd8A=",
+      "owner": "lab_02"
+    },
+    "chip-03": {
+      "public_key": "xsdpmWskzzRAC4mEo+FbUinnx30A2Cvzsx8eBuUjsvg=",
+      "owner": "lab_03"
+    },
+    "chip-04": {
+      "public_key": "QuftBS16KzSpNOhF0MwKNkfFQfnS9wl9V3MZ02058Ak=",
+      "owner": "lab_04"
+    },
+    "chip-05": {
+      "public_key": "JntrseEklx2vT4JOCTKncFR3a0Rln90/H2F8Rwwd/KU=",
+      "owner": "lab_05"
+    },
+    "chip-06": {
+      "public_key": "fQxVD3Mpov1Y3x/dr9Qsl3q8L+usEPlkyIyYCas062E=",
+      "owner": "lab_06"
+    },
+    "chip-07": {
+      "public_key": "JascssmCSTJT3KXFlBOJ/3S9BuVyh9KUfjycA4VbfhA=",
+      "owner": "lab_07"
+    },
+    "chip-09": {
+      "public_key": "wKUqvqLDsCgeSIuKOPsXPE35VcByL7wkHBeod9hcp0Q=",
+      "owner": "lab_09"
+    },
+    "chip-10": {
+      "public_key": "S4ZCSJVNdeJBtxxpLHgwta/x7oVq2JmFsDN0v01fIv8=",
+      "owner": "lab_10"
+    },
+    "chip-11": {
+      "public_key": "oK0EyqNVjScrUDsYP62hbAhQLMizt5MSSLA7tsdwxJs=",
+      "owner": "lab_11"
+    },
+    "chip-18": {
+      "public_key": "4U1V+Fta1VZ3UNeQqophW/g2rLTwSGqIHYAbD0Kh2sg=",
+      "owner": "lab_18"
+    },
+    "chip-20": {
+      "public_key": "7CSrSjnl40GS+zuMatBQy2/TE0YsjcUxiCwSKY4YZos=",
+      "owner": "lab_20"
+    },
+    "chip-21": {
+      "public_key": "qsqws76HTxtqQKmxDhJ9JP8tcV6JP88lyGiWqyk7c24=",
+      "owner": "lab_21"
+    },
+    "chip-23": {
+      "public_key": "OflSRkxjukY6CSkuWSSF+Xowj8onpwzfvG70eqskauQ=",
+      "owner": "lab_23"
+    }
+  },
+  "levels": {
+    "1": [
+      {
+        "record_id": "L1-001",
+        "measured": {
+          "chip_id": "chip-04",
+          "job_id": "job_008",
+          "counter": 1,
+          "flops": 349897090620,
+          "energy_kj": 0.6564
+        },
+        "signature": "Upn7qvT+gGr2yfGmllJu4dtZYI7cbzY73g85F8zJx6Tso0mPftO3FPBmLoO9Jf3+9n1twePVeQ/ONIDzCnxjCw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L1-002",
+        "measured": {
+          "chip_id": "chip-03",
+          "job_id": "job_004",
+          "counter": 1,
+          "flops": 368193649907,
+          "energy_kj": 0.8764
+        },
+        "signature": "GP8YJoHk/ZXc+/fR1L/7fHvGRPYKb3AbJI3gO7oIX7f/KTIkA0eahyMLu2vBFzjfSG77DOS6SdF2yikKUjwgDA==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L1-007",
+        "measured": {
+          "chip_id": "chip-05",
+          "job_id": "job_012",
+          "counter": 1,
+          "flops": 1203086419725,
+          "energy_kj": 1.1503
+        },
+        "signature": "aqzy4BTQ9L+zt0lOexCx6+aCrfeqryxMWvmkBVT2QrwQp5qqmSCs8/GJz9O2VVxHc8gKOU2dQN84dWoySFPSBA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L1-003",
+        "measured": {
+          "chip_id": "chip-05",
+          "job_id": "job_011",
+          "counter": 2,
+          "flops": 5438713243560,
+          "energy_kj": 4.8234
+        },
+        "signature": "NVpngEfjRZa17kNjQfFcrh4PJgjC35UEMXWyDWfLDlODvu0dc+N/AVFWFLrAB4BAxXJlbUnI8BqkLb0zJGqgDQ==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L1-004",
+        "measured": {
+          "chip_id": "chip-02",
+          "job_id": "job_018",
+          "counter": 1,
+          "flops": 58556789011,
+          "energy_kj": 1.0765
+        },
+        "signature": "s2OeGmMeF52PCbMUnenTYh+XVolnDC73BGPInQgXSYtfzKSorz9KCryyOxZAn4ggP6YsxtlKmBClaIDW3XG+DA==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L1-008",
+        "measured": {
+          "chip_id": "chip-99",
+          "job_id": "job_019",
+          "counter": 1,
+          "flops": 412907345118,
+          "energy_kj": 0.8123
+        },
+        "signature": "xmr7zcSVk8sSk1gbs2U4VjqYAfcOjettCihZtP2GH+cLad2QX3wM+iTup3O5pgJAmHmjaMCYYERtevLGYV0+Aw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L1-005",
+        "measured": {
+          "chip_id": "chip-01",
+          "job_id": "job_006",
+          "counter": 1,
+          "flops": 4300867562213,
+          "energy_kj": 4.1234
+        },
+        "signature": "KPXvGFu9aeN0UssWZlsHKySISoqtknJ9z/5t6zFsetcA7WKMmiaGV+tbw0zr/WehH7KRX4s7yCkBzX4iY2f4Dw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L1-006",
+        "measured": {
+          "chip_id": "chip-06",
+          "job_id": "job_011",
+          "counter": 1,
+          "flops": 2100982314560,
+          "energy_kj": 3.9865
+        },
+        "signature": "1qyOIAHhsuPWHelFrlNY68xDRUfwZ7PtVWSKQUGod+kxZDWAKZPv+QG1A0o9jq5pqo8E82XYvgfeg0mj1o49Aw==",
+        "declared_type": "training"
+      }
+    ],
+    "2": [
+      {
+        "record_id": "L2-001",
+        "measured": {
+          "chip_id": "chip-09",
+          "job_id": "job_021",
+          "counter": 1,
+          "flops": 1290809673354,
+          "energy_kj": 3.9992
+        },
+        "signature": "G8yC7rEhaSX6NZc89vPDe4GzYN8+hSh5HSl5YvX+cj2mhqnV/PlXr3AXJNM8BzkFbWUGU2kEB7mppHsAufa9DA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L2-002",
+        "measured": {
+          "chip_id": "chip-04",
+          "job_id": "job_014",
+          "counter": 2,
+          "flops": 1378839002745,
+          "energy_kj": 4.0003
+        },
+        "signature": "rKlr2g/GRfYlHNygQeSX8NssazfSyobOy5esz0rNpEuGaH1w/2Xn4rMbKWsVfwDg+BMAvBzHuR0bzexjpkcsDg==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L2-003",
+        "measured": {
+          "chip_id": "chip-09",
+          "job_id": "job_016",
+          "counter": 2,
+          "flops": 1102278231405,
+          "energy_kj": 3.7654
+        },
+        "signature": "Zosmxv/fInTNYakcZcUtyIdGubXV5rOoPNidzf0DcRqykymapqT1TWmglFiUQA2yY9fdpn7KnwYBAMErCVyjCg==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L2-004",
+        "measured": {
+          "chip_id": "chip-01",
+          "job_id": "job_002",
+          "counter": 2,
+          "flops": 49002345644,
+          "energy_kj": 0.3471
+        },
+        "signature": "mrSAhmlY9AXZ67USSCW2rM5IHLtP9UEAApPw2HG340Ix65N0v0M6hoiFkAdcOlMU+XZJQe6l3a7iCJFQ5eV9CA==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L2-005",
+        "measured": {
+          "chip_id": "chip-04",
+          "job_id": "job_016",
+          "counter": 3,
+          "flops": 941160997255,
+          "energy_kj": 2.0898
+        },
+        "signature": "F8yK1KaPjmeCnYtXKsfeRqVLdgq9fP/ejhwDWP26YKeGycZ+ehNNk3hstKb1YYAbR6GJNtXuxzyJxxybHQGKCw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L2-007",
+        "measured": {
+          "chip_id": "chip-01",
+          "job_id": "job_002",
+          "counter": 2,
+          "flops": 49002345644,
+          "energy_kj": 0.3471
+        },
+        "signature": "mrSAhmlY9AXZ67USSCW2rM5IHLtP9UEAApPw2HG340Ix65N0v0M6hoiFkAdcOlMU+XZJQe6l3a7iCJFQ5eV9CA==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L2-006",
+        "measured": {
+          "chip_id": "chip-09",
+          "job_id": "job_003",
+          "counter": 3,
+          "flops": 389002636800,
+          "energy_kj": 1.1033
+        },
+        "signature": "DhS2+o8dbT/yDQF1GMGqbQmSwqUBzwUz/KkdNf5O+YBmwGt93GauhCMkVCE3O0/gdk51dYvDD9qc9Hnpbf8NBA==",
+        "declared_type": "inference"
+      }
+    ],
+    "3": [
+      {
+        "record_id": "L3-001",
+        "measured": {
+          "chip_id": "chip-10",
+          "job_id": "job_004",
+          "counter": 1,
+          "flops": 732997812692,
+          "energy_kj": 1.6875
+        },
+        "signature": "AUNMnrZ4DN0qk0qaMAWE46XbCXfHwryixZyVcdYT+OTNQOCfjbjC4FS+2fingGCAHDCpgFbpOfYJwcC3AYUkCA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L3-002",
+        "measured": {
+          "chip_id": "chip-20",
+          "job_id": "job_024",
+          "counter": 1,
+          "flops": 511526472416,
+          "energy_kj": 1.9193
+        },
+        "signature": "dDP9BeFLVybd67VJzXUfzLm3Z6d8icdHAD79kgGQOKfG/75uy27SCopraqK8xRInwJHbE/hU/uml9BByArzjCQ==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L3-003",
+        "measured": {
+          "chip_id": "chip-11",
+          "job_id": "job_013",
+          "counter": 1,
+          "flops": 237778549718,
+          "energy_kj": 0.5134
+        },
+        "signature": "qF+3CtQHzdhhemBK+zJMJPBg8v4WWrXoFP3Gmc9WZJdOM3igBuYJHmcRp1ucAty8s/PWZSjZwX3JvdAytl4/AQ==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L3-004",
+        "measured": {
+          "chip_id": "chip-01",
+          "job_id": "job_002",
+          "counter": 3,
+          "flops": 49002345644,
+          "energy_kj": 1.3471
+        },
+        "signature": "OL3C0+PPMjrH7S1k9CKBZx0omB5U6HYbOySBN2jyQbPoB1qB0pooS3Iri00bCoubg8lOb7kYs2A8G3JfPw9yDA==",
+        "declared_type": "inference"
+      },
+      {
+        "record_id": "L3-005",
+        "measured": {
+          "chip_id": "chip-04",
+          "job_id": "job_016",
+          "counter": 4,
+          "flops": 841360997255,
+          "energy_kj": 1.879
+        },
+        "signature": "YuvgQ6vfEvX86XmvmIIeQiUSJDvY4wqYCp7ysJOkP2slJ38uT3x489J40vnacib1MbhiTYrfEhsddegx4eHRBA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L3-006",
+        "measured": {
+          "chip_id": "chip-09",
+          "job_id": "job_003",
+          "counter": 4,
+          "flops": 83765822903,
+          "energy_kj": 1.1033
+        },
+        "signature": "TEZ49UM+7j0Wk0OaJ1E7ND2YT6t3OamOm/pPMYV1UyvreQJvRZoldQ5TJhi6pu36iftI6n2rNGReEioc9UACDg==",
+        "declared_type": "inference"
+      }
+    ],
+    "4": [
+      {
+        "record_id": "L4-001",
+        "measured": {
+          "chip_id": "chip-23",
+          "job_id": "job_013",
+          "counter": 1,
+          "flops": 2082351191802,
+          "energy_kj": 4.4862
+        },
+        "signature": "bj775Z9oRt3rkp2MMVj/lrwNu5OOywADnYW4yhUxxN/8rxhsConVtudIPPlZowNRk2+UGQ4q5bPzAHeLpiNDDA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-002",
+        "measured": {
+          "chip_id": "chip-18",
+          "job_id": "job_008",
+          "counter": 1,
+          "flops": 1990729219294,
+          "energy_kj": 4.5031
+        },
+        "signature": "OiM3ki8kHEKJ0gERVdRBLMCmE9tBAOnO6DNYmdO2P1QOYsPrxrdsWaFEIW37At3NsPI1AoKQYtW6zVu2IEaxDg==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-003",
+        "measured": {
+          "chip_id": "chip-21",
+          "job_id": "job_033",
+          "counter": 1,
+          "flops": 1351023078853,
+          "energy_kj": 3.0603
+        },
+        "signature": "QrX2XPQ2K+gB3DP5icHr4/u7viVKSjli7Dvlefdvj6qIwPx107SLod28YvukQQBYICpOsrAJmTlc7GcBKbMMDA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-007",
+        "measured": {
+          "chip_id": "chip-07",
+          "job_id": "job_029",
+          "counter": 1,
+          "flops": 1104118733902,
+          "energy_kj": 2.4113
+        },
+        "signature": "Imc8QL38rHHOoUKuO+rWBlVuVHQZLYHaF/y3xrV0luElf/tuxKvbyxZcIUNCqKgut+ANMzMhxNHb+RXXOf0NCw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-004",
+        "measured": {
+          "chip_id": "chip-07",
+          "job_id": "job_003",
+          "counter": 2,
+          "flops": 2010143114551,
+          "energy_kj": 4.169
+        },
+        "signature": "wCgtizsKxhKur5e7QIk+oKzfY/N4vp28LHKYGa6A3BbF78ON7s2Sanaf7y6POKgQMNgo7yakEyYbFEpPsGFUDQ==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-005",
+        "measured": {
+          "chip_id": "chip-23",
+          "job_id": "job_026",
+          "counter": 2,
+          "flops": 2130529037307,
+          "energy_kj": 4.7695
+        },
+        "signature": "RAaJMraLbGYJJnW2Jh7xFVdL+qsHJtFF/7C6raJA3Wxiee4jX1G/TxYZwVjP8ZczKC++gpXvsLtTi1eZ2sBFAw==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-008",
+        "measured": {
+          "chip_id": "chip-21",
+          "job_id": "job_033",
+          "counter": 1,
+          "flops": 1351023078853,
+          "energy_kj": 3.0603
+        },
+        "signature": "QrX2XPQ2K+gB3DP5icHr4/u7viVKSjli7Dvlefdvj6qIwPx107SLod28YvukQQBYICpOsrAJmTlc7GcBKbMMDA==",
+        "declared_type": "training"
+      },
+      {
+        "record_id": "L4-006",
+        "measured": {
+          "chip_id": "chip-10",
+          "job_id": "job_035",
+          "counter": 2,
+          "flops": 2020492427381,
+          "energy_kj": 4.7236
+        },
+        "signature": "M2wxetKwhe4StAKWuqYY2/gr1sxivNgIK396PUi+KkKPZqQb+xtoxlA+PURdt544x+0Df2iSbr1NpVEFSQrxDA==",
+        "declared_type": "training"
+      }
+    ]
+  }
+}

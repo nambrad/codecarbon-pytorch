@@ -35,6 +35,7 @@ replay             FAIL  stale counter (replay)
 | `chip.py` | **no** | `Chip`: private key + counter, `report()` signs a reading |
 | `manufacturer.py` | **no** | `make_chip(seed, chip_id)` |
 | `reference.py` | **no** | Answer-key `verify_evidence()` |
+| `sign_levels.py` | **no** | Builds `game_data.json` from `levels.json` (see below) |
 | `demo.py` | no | The demo above |
 
 ## A signed record
@@ -50,7 +51,35 @@ replay             FAIL  stale counter (replay)
 `measured` is signed. Anything added next to it (`record_id`, `declared_type`, `actor`) is an
 unsigned operator claim: editing it does not break the signature. That is the Level 3 lesson.
 
-## Making records (instructor)
+## Building the game data (instructor)
+
+```bash
+python -m rot.sign_levels        # from the repo root
+```
+
+Reads `levels.json` and `game_config.json` and writes `game_data.json`: the config, the registry
+and every record signed. Each lab gets one chip (`lab_04` -> `chip-04`), and the signed record
+drops `actor` because the owner comes from the registry. Mark attacks in `levels.json`:
+
+```json
+{"record_id": "L1-007", "actor": "lab_05", "job_id": "job_012", "flops": 4812345678901,
+ "energy_kj": 4.6012, "declared_type": "training",
+ "attack": "edited", "edited": {"flops": 1203086419725, "energy_kj": 1.1503}}
+
+{"record_id": "L1-008", "chip_id": "chip-99", "job_id": "job_019", "flops": 412907345118,
+ "energy_kj": 0.8123, "declared_type": "training", "attack": "unregistered"}
+
+{"record_id": "L2-007", "attack": "replay", "copy_of": "L2-004"}
+```
+
+- `edited`: signed with the true values, then the `edited` values are swapped in
+- `unregistered`: signed by `chip_id`, a chip left out of the registry
+- `replay`: an exact copy of an earlier record **in the same level**
+
+Give every attack record a `"block"` entry in `answer_keys.json`. Set `ROT_SEED` to get the same
+signatures on every run; without it each run uses a random seed.
+
+## Making records by hand
 
 ```python
 from rot.manufacturer import make_chip
